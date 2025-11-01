@@ -1,0 +1,247 @@
+*{
+    margin:0;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border:border-box;
+}
+.navbar{
+    height:100px;
+    background-color:rgb(211 210 223 / 40%);
+    display: flex;
+    color:black;
+    width:auto;
+
+}
+
+.nav-logo{
+    height: 99px;
+    width: 122px;
+}
+
+.logo{
+    background-image:url('Big_phone_with_cart.jpg');
+    background-size: cover;
+          height: 99px;
+    width: 122px;
+}
+
+.nav-logo:hover{
+    border:2px solid white;
+    cursor:pointer;
+}
+
+.categories{
+       margin: 36px;
+    padding: 4px;
+    font-size: 12px;
+}
+
+.menu{display: flex;}
+.searchbar{
+    margin: 29px 29px 100px;
+    padding: 8px 8px 30px;
+    font-size:larger;
+    border:1px;
+}
+
+.search:hover{background-color:blue;
+    border:1px solid black;
+}
+
+.search{
+    cursor:pointer;
+}
+.accounts{
+       margin: 2px;
+    padding: 38px;
+    font-size: 21px;
+    cursor:pointer;
+}
+
+.cart{
+   margin: 41px;
+    padding: 0px;
+    font-size: 21px;
+    cursor:pointer;
+}
+
+.main{
+    background-image: url('E-commerce_web_design_EWM_SA_Digital_Agency_Geneva.jpg');
+        height: 562px;
+    width: 1513px;
+    background-size: cover;
+}
+
+.Shop-sections{
+    display:flex;
+    justify-content: space-evenly;
+    background-color: rgb(238 238 238);
+    height:304px;
+    width:99.2%;
+    margin-top: 25px;
+   
+}
+
+.box{
+           width:31%;
+    height:200px;
+}
+
+.clothes{
+    background-image: url(clothes.jpg);
+    background-size:cover;
+   height: 110%;
+    width: auto;
+}
+
+.electronics{
+    background-image: url(electronics.jpg);
+    background-size: cover;
+    height: 110%;
+    width: auto;
+}
+
+.smartphones{
+    background-image:url(smartphones.jpg);
+    background-size: cover;
+    height: 110%;
+    width: auto;
+    
+}
+
+a{
+    text-decoration:none;
+    color:black;
+}
+
+/* footer*/
+footer{margin-top: 44px;
+background-color:#dcdbdb;               
+    height:auto;
+    width:1520px;}
+
+.info{
+    
+    padding:10px;
+    ;
+}
+
+.about-us{
+text-align: center;
+}
+
+.a1{
+    text-decoration: underline;
+    font-size:medium;
+
+}
+
+.a2{
+    font-size:small;}
+
+.track{
+    text-align:center;
+    text-decoration: solid;
+    margin-top:12px;
+}
+
+.product{
+    display: flex;
+    padding-top:20px;
+}
+
+.one{
+       height: 288px;
+    width: 307px;
+    margin-top:20px;
+    margin-left: 34px;
+}
+
+.two{
+     height: 288px;
+    width: 307px;
+    margin-top:20px;
+    margin-left: 25px;
+}
+
+.h1{
+        margin-top: 55px;
+    margin-left: 161px;
+}
+    
+.h2{
+    margin-top:50px;
+    margin-left:161px;
+}
+
+.p1{
+            margin-top: 111px;
+    margin-left: -238px;
+}
+
+.p2{
+     margin-top: 111px;
+    margin-left: -176px;
+}
+
+.b1{
+    margin-top:267px;
+    margin-left:-135px;
+    
+    height:19px;
+
+}
+
+.b2{
+    margin-top: 267px;
+    margin-left: -135px;
+    height: 19px;
+}
+
+.poco{
+    margin-top:111px;
+    margin-left:-121px;
+}
+
+.vivo{
+       margin-top: 111px;
+    margin-left: -103px;
+}
+
+.form{
+    text-align: center;
+    font-size: large;
+    color:red;
+    margin-top:100px;
+}
+
+
+.ref{
+    text-align:center;
+        margin: 75px;
+    padding: 169px;
+    background-image: url(login.jpg);
+    background-size: cover;
+    width:50%;
+    height:12%
+    
+   
+}
+
+.email{
+    margin:20px;
+
+}
+
+.password{
+    margin:20px;
+}
+
+.submit:hover{
+    background-color: blue;
+    color:red;
+    cursor: pointer;
+}
+
+.submit{
+    margin:20px;
+}
