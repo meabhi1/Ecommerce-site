@@ -144,56 +144,95 @@ text-align: center;
     margin-top:12px;
 }
 
-.product{
-    display: flex;
-    padding-top:20px;
+
+
+.product1{
+    background-image: url(tshirt1.jpg);
+    background-size: cover;
+       height: 288px;
+    width: 298px;
+    margin-top:20px;
+    margin-left: 34px;
+   
 }
 
-.one{
-       height: 288px;
+.product2{
+    background-image: url(tshirt2.jpg);
+    background-size: cover;
+     height: 288px;
     width: 307px;
+    margin-top:20px;
+    margin-left: 25px;
+    
+   
+}
+
+.content1{
+    background-image: url(usb.jpg);
+     background-size: cover;
+       height: 288px;
+    width: 298px;
     margin-top:20px;
     margin-left: 34px;
 }
 
-.two{
+.content2{
+    background-image: url(sandisk.jpg);
+    background-size: cover;
      height: 288px;
     width: 307px;
     margin-top:20px;
     margin-left: 25px;
 }
 
+.image1{
+    background-image: url(poco.jpg);
+     background-size: cover;
+       height: 288px;
+    width: 298px;
+    margin-top:20px;
+    margin-left: 34px;
+}
+
+.image2{
+    background-image: url(vivo.jpg);
+    background-size: cover;
+     height: 288px;
+    width: 307px;
+    margin-top:20px;
+    margin-left: 25px;
+}
 .h1{
-        margin-top: 55px;
-    margin-left: 161px;
+        margin-top: -279px;
+    margin-left: 404px;
 }
     
 .h2{
-    margin-top:50px;
-    margin-left:161px;
+       margin-top: -252px;
+    margin-left: 461px;
 }
 
 .p1{
-            margin-top: 111px;
-    margin-left: -238px;
+               margin-top: 34px;
+    margin-left: 413px;
 }
 
 .p2{
-     margin-top: 111px;
-    margin-left: -176px;
+         margin-top: 11px;
+    margin-left: 467px;
 }
 
 .b1{
     margin-top:267px;
-    margin-left:-135px;
+    margin-left:465px;
     
     height:19px;
 
 }
 
 .b2{
-    margin-top: 267px;
-    margin-left: -135px;
+    margin-top:164px;
+    margin-left: 500px;
     height: 19px;
 }
 
@@ -207,6 +246,7 @@ text-align: center;
     margin-left: -103px;
 }
 
+/*Login form*/
 .form{
     text-align: center;
     font-size: large;
