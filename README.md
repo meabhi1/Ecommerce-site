@@ -1,0 +1,1 @@
+A full-stack E-Commerce Web Application that allows users to browse products, add items to cart, and place orders. The project includes authentication, product management, and order handling using a Node.js + Express + SQL backend.
