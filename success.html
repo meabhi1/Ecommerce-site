@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Success</title>
+<link rel="stylesheet" href="style.css">
+<style>
+body { text-align:center; padding:50px; font-family:sans-serif; }
+h1 { color: green; }
+.order-summary { margin-top:20px; text-align:left; display:inline-block; }
+.order-summary div { margin-bottom:10px; }
+</style>
+</head>
+<body>
+
+<h1>🎉 Thank you for your order!</h1>
+<p>Your order has been placed successfully.</p>
+
+<div class="order-summary" id="orderSummary"></div>
+
+<button onclick="goHome()">Back to Home</button>
+
+<script>
+let order = JSON.parse(localStorage.getItem("lastOrder"));
+
+if(order) {
+  let container = document.getElementById("orderSummary");
+  container.innerHTML = `<h3>Order ID: ${order.id}</h3>`;
+  order.items.forEach(it => {
+    container.innerHTML += `<div>${it.name} - ₹${it.price} x ${it.qty}</div>`;
+  });
+  container.innerHTML += `<h3>Total: ₹${order.total}</h3>`;
+}
+
+function goHome() {
+  window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>

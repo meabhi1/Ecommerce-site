@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Site</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+
+ 
+         
+
+</div>
+ <header>
+  <div class="navbar">
+
+    <!-- LEFT -->
+    <div class="nav-left">
+      <div class="brand">MyShop</div>
+      <span class="tagline">Explore Plus ✨</span>
+    </div>
+
+    <!-- CENTER SEARCH -->
+    <div class="nav-center">
+      <div class="searchbar">
+        <input type="text" id="searchInput" placeholder="Search for products, brands and more">
+        <button onclick="searchProduct()">🔍</button>
+      </div>
+    </div>
+
+     <div class="menu">
+      <a href="index.html">Home</a>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="nav-right">
+
+      <!-- USER -->
+     <div class="accounts">
+      <a href="login.html">Login</a>
+    </div>
+
+      <!-- CART -->
+      <div class="cart" onclick="toggleCart()">
+        🛒 <span id="cart-count">0</span>
+      </div>
+
+      
+
+  </div>
+</header>
+
+           <div class="container">
+
+  <div class="card">
+    <img src="usb.jpg" alt=""usb>
+    <h3>USB Drive</h3>
+    <p>₹399</p>
+    <button onclick="addToCart(1, 'USB Drive', 399)">Add to Cart</button>
+   
+<button onclick="addToWishlist('USB Drive',399)">❤️ Wishlist</button>
+  </div>
+
+  <div class="card">
+    <img src="sandisk.jpg" alt="san">
+    <h3>SanDisk Storage</h3>
+    <p>₹799</p>
+    <button onclick="addToCart(2, 'SanDisk Storage', 799)">Add to Cart</button>
+  
+<button onclick="addToWishlist('SanDisk',799)">❤️ Wishlist</button>
+  </div>
+
+</div>
+<div id="overlay" class="overlay" onclick="closeCart()"></div>
+
+<div id="cart-box" class="cart-box">
+  <button onclick="closeCart()" style="float:right;">❌</button>
+  <h2>Your Cart</h2>
+  <div id="cart-items"></div>
+  <h3 id="total"></h3>
+  <button onclick="payNow()">Checkout</button>
+</div>
+
+           
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script src="script.js"></script>
+    </body>
+</html>

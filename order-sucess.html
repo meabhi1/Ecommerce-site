@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Success</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  body { display:flex; justify-content:center; align-items:center; height:100vh; background:#f1f3f6; font-family: Arial, sans-serif; }
+  .success-box { background:white; padding:30px; border-radius:10px; text-align:center; box-shadow:0 5px 20px rgba(0,0,0,0.2);}
+  h1 { color:green; margin-bottom:10px; }
+  ul { text-align:left; margin:20px 0; }
+  .total { font-weight:bold; margin-top:10px; }
+  button { padding:10px 20px; border:none; background:#2874f0; color:white; border-radius:6px; cursor:pointer; }
+  button:hover { opacity:0.9; }
+</style>
+</head>
+<body>
+  <div class="success-box">
+    <h1>🎉 Thank You for Your Order!</h1>
+    <p>Your order has been placed successfully.</p>
+    <div id="order-details"></div>
+    <button onclick="goHome()">Back to Shop</button>
+  </div>
+
+<script>
+  // Load order from localStorage
+  let lastOrder = JSON.parse(localStorage.getItem("lastOrder"));
+  let detailsDiv = document.getElementById("order-details");
+
+  if (lastOrder && lastOrder.items.length > 0) {
+    let html = "<ul>";
+    lastOrder.items.forEach(item => {
+      html += `<li>${item.name} - ₹${item.price} x ${item.qty}</li>`;
+    });
+    html += "</ul>";
+    html += `<div class='total'>Total: ₹${lastOrder.total}</div>`;
+    detailsDiv.innerHTML = html;
+  } else {
+    detailsDiv.innerHTML = "<p>No order details found.</p>";
+  }
+
+  function goHome() {
+    window.location.href = "index.html";
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MyShop</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+ <header>
+  <div class="navbar">
+
+    <!-- LEFT -->
+    <div class="nav-left">
+      <div class="brand">MyShop</div>
+      <span class="tagline">Explore Plus ✨</span>
+    </div>
+
+    <!-- CENTER SEARCH -->
+    <div class="nav-center">
+      <div class="searchbar">
+        <input type="text" id="searchInput" placeholder="Search for products, brands and more">
+        <button onclick="searchProduct()">🔍</button>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="nav-right">
+
+      <!-- USER -->
+     <div class="accounts">
+      <a href="login.html">Login</a>
+    </div>
+
+      <!-- CART -->
+      <div class="cart" onclick="toggleCart()">
+        🛒 <span id="cart-count">0</span>
+      </div>
+
+      
+
+  </div>
+</header>
+
+<!-- TOP MENU -->
+<div class="top-menu">
+  <span>🔥 Top Offers</span>
+  <span>📱 Mobiles</span>
+  <span>👕 Fashion</span>
+  <span>💻 Electronics</span>
+  <span>🏠 Home</span>
+</div>
+
+<!-- HERO SECTION -->
+<div class="hero">
+  <div class="hero-text">
+    <h1>Big Deals, Big Savings 💥</h1>
+    <p>Shop your favourite products at best prices</p>
+    <button onclick="goToCategory('clothes.html')">Shop Now</button>
+  </div>
+</div>
+
+<!-- CATEGORY CARDS -->
+<div class="Shop-sections">
+
+  <div class="box">
+    <h2>Clothes</h2>
+    <div class="clothes"></div>
+    <a href="clothes.html">Explore</a>
+  </div>
+
+  <div class="box">
+    <h2>Electronics</h2>
+    <div class="electronics"></div>
+    <a href="Electronic.html">Explore</a>
+  </div>
+
+  <div class="box">
+    <h2>Smartphones</h2>
+    <div class="smartphones"></div>
+    <a href="Smartphone.html">Explore</a>
+  </div>
+
+
+  
+
+</div>
+
+<div id="overlay" class="overlay" onclick="closeCart()"></div>
+
+<div id="cart-box" class="cart-box">
+  <button onclick="closeCart()" style="float:right;">❌</button>
+  <h2>Your Cart</h2>
+  <div id="cart-items"></div>
+  <h3 id="total"></h3>
+  <button onclick="payNow()">Checkout</button>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 MyShop | Made with ❤️</p>
+</footer>
+
+<script src="script.js"></script>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+</body>
+</html>
