@@ -227,24 +227,7 @@ function logout() {
 
 checkLogin();
 
-// CHECK LOGIN ON PAGE LOAD
-function protectPage() {
-  let user = localStorage.getItem("loggedInUser");
 
-  // current page name
-  let page = window.location.pathname;
-
-  // allow login & signup pages
-  if (page.includes("login.html") || page.includes("signup.html")) {
-    return;
-  }
-
-  if (!user) {
-    window.location.href = "login.html";
-  }
-}
-
-protectPage();
 
 function togglePassword() {
   let pass = document.getElementById("loginPassword");
